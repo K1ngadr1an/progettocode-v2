@@ -16,6 +16,7 @@ console.log(persona2.name);
 
 //Metodo2
 const persona3 = new Object({ name: 'Davide' });
+console.log(persona3.name);
 
 //Metodo3
 
@@ -70,12 +71,12 @@ console.log('\n');
 class HeroDC {
   message = "I'm a loser!";
 
-  constructor(){
-    console.log("init");
+  constructor() {
+    console.log('init');
   }
 
-  getMessage(){
-    console.log("get message");
+  getMessage() {
+    console.log('get message');
   }
 }
 
@@ -89,8 +90,8 @@ class PersonaExemple2 {
     this.age = age;
   }
 
-  saluta(){
-    console.log(`Ciao , io sono ${this.name} e sono single`)
+  saluta() {
+    console.log(`Ciao , io sono ${this.name} e sono single`);
   }
 }
 
@@ -100,41 +101,41 @@ console.log('\n');
 
 // extends serve per estendere la classe
 class Eroe {
-  name = "Tony Stark"
+  name = 'Tony Stark';
 }
 
-class Hero extends Eroe{
-  nickname = "Iron Man";
+class Hero extends Eroe {
+  nickname = 'Iron Man';
 }
 
-// come fare col constructor
+Hero();
 
+//come fare col constructor
 class Personaa {
-  constructor(initialName){
+  constructor(initialName) {
     this.name = initialName;
   }
 }
 
-new Personaa('Andrea')
+new Personaa('Andrea');
 
 class Heroa extends Personaa {
-  constructor(initialName, initialNickname){
+  constructor(initialName, initialNickname) {
     super(initialName);
     this.nickname = initialNickname;
   }
 }
 
-const Heroa2 = new Heroa()
+const Heroa2 = new Heroa();
 
-console.log(Heroa2)
-console.log("\n");
-
+console.log(Heroa2);
+console.log('\n');
 
 // static = rendere la funzione metodo della classe stessa
 class Esempio {
-  static saluta(){
-    console.log("Ciao");
+  static saluta() {
+    console.log('Ciao');
   }
 }
 
-Esempio.saluta()
+Esempio.saluta();

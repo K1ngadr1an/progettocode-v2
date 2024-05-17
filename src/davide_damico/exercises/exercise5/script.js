@@ -94,3 +94,5 @@ function test(character) {
   }
   return `${discoveredWord.join('')} Tentativi rimasti: ${numOfAttemps}`;
 }
+
+test();
